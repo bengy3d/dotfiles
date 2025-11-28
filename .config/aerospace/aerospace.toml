@@ -10,11 +10,14 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+    'exec-and-forget borders active_color=0xff0000ff inactive_color=0xff494d64 width=5.0',
+    'exec-and-forget open -a "SwipeAeroSpace"',
+    'layout tiles'
+    #    'exec-and-forget sketchybar',
 ]
 
 exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+    #'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
 ]
 
 # Start AeroSpace at login
@@ -71,7 +74,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   0
     outer.left =       5
     outer.bottom =     5
-    outer.top =        40
+    outer.top =        0
     outer.right =      5
 
 # 'main' binding mode declaration
@@ -112,10 +115,10 @@ automatically-unhide-macos-hidden-apps = false
 #alt-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    cmd-h = 'focus left'
-    cmd-j = 'focus down'
-    cmd-k = 'focus up'
-    cmd-l = 'focus right'
+    cmd-alt-h = 'focus left'
+    cmd-alt-j = 'focus down'
+    cmd-alt-k = 'focus up'
+    cmd-alt-l = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     cmd-shift-h = 'move left'
@@ -150,7 +153,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-9 = 'move-node-to-workspace 9'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    #alt-shift-semicolon = 'mode service'
+    alt-shift-semicolon = 'mode service'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
