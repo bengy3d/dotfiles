@@ -11,10 +11,10 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p $HOME/.config
 
-ln -s $SCRIPT_DIR/.config/nvim $HOME/.config/nvim
+ln -s $SCRIPT_DIR/config/nvim $HOME/.config/nvim
 
 mkdir -p $HOME/.local/bin
 
-ln -s $SCRIPT_DIR/.local/bin/tmux-sessionizer $HOME/.local/bin/tmux-sessionizer
+ln -s $SCRIPT_DIR/local/bin/tmux-sessionizer $HOME/.local/bin/tmux-sessionizer
 
 mkdir -p $HOME/Work/Notes
