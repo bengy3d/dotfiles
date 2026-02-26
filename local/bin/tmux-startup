@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -ds commands -c ~
+    tmux new-session -ds Notes -c ~/Work/Notes
+    tmux attach-session -t commands
+    exit 0
+fi
+
+if ! tmux has-session -t=commands 2> /dev/null; then
+    tmux new-session -ds commands -c ~
+fi
+
+if ! tmux has-session -t=Notes 2> /dev/null; then
+    tmux new-session -ds Notes -c ~/Work/Notes
+fi
+
+if [[ -z $TMUX ]]; then
+    tmux attach-session -t commands
+fi
