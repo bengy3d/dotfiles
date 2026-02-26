@@ -1,0 +1,76 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": "editor::PageDown",
+      "ctrl-u": "editor::PageUp",
+      "shift-k": "editor::Hover",
+      "g d": "editor::GoToDefinition",
+      "g i": "editor::GoToImplementation"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "space t": "project_panel::ToggleFocus",
+      "space u": "editor::ToggleGitBlame",
+      "space g s": "editor::ToggleGitBlame",
+      "space p f": "file_finder::Toggle",
+      "ctrl-p": "file_finder::Toggle",
+      "space p s": "pane::DeploySearch",
+      "ctrl-e": "tab_switcher::Toggle",
+      "space y": "editor::Copy",
+      "space d": "editor::Delete",
+      "[ d": "editor::GoToDiagnostic",
+      "] d": "editor::GoToPrevDiagnostic",
+      "space v c a": "editor::ToggleCodeActions",
+      "space v r r": "editor::FindAllReferences",
+      "space v r n": "editor::Rename",
+      "space v d": "diagnostics::Deploy",
+      "space v w s": "outline::Toggle"
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp",
+      "ctrl-d": "vim::ScrollDown",
+      "ctrl-u": "vim::ScrollUp"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space t": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp",
+      "space p": "editor::Paste",
+      "space y": "editor::Copy",
+      "space d": "editor::Delete"
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "ctrl-p": "editor::ContextMenuPrev",
+      "ctrl-n": "editor::ContextMenuNext",
+      "ctrl-y": "editor::ConfirmCompletion",
+      "ctrl-space": "editor::ShowCompletions"
+    }
+  }
+]
