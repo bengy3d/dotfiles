@@ -5,7 +5,7 @@ if ! command -v brew &>/dev/null; then
     exit 1
 fi
 
-brew install nvim htop tmux fzf ripgrep
+brew install nvim htop tmux fzf ripgrep tree-sitter-cli
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
