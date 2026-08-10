@@ -7,10 +7,11 @@ size = 18.0
 
 [keyboard]
 bindings = [
-  { key = "Left",  mods = "Option",  chars = "\x1bb" },
-  { key = "Right", mods = "Option",  chars = "\x1bf" },
-  { key = "Back",  mods = "Option",  chars = "\x1b\x7f" },
-  { key = "Left",  mods = "Command", chars = "\x01" },
-  { key = "Right", mods = "Command", chars = "\x05" },
-  { key = "Back",  mods = "Command", chars = "\x15" },
+  { key = "Left",  mods = "Option",  chars = "\u001bb" },
+  { key = "Right", mods = "Option",  chars = "\u001bf" },
+  { key = "Back",  mods = "Option",  chars = "\u001b\u007f" },
+  { key = "Left",  mods = "Command", chars = "\u0001" },
+  { key = "Right", mods = "Command", chars = "\u0005" },
+  { key = "Back",  mods = "Command", chars = "\u0015" },
+  { key = "6",     mods = "Control", chars = "\u001e" },
 ]
