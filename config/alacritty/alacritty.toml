@@ -15,3 +15,6 @@ bindings = [
   { key = "Back",  mods = "Command", chars = "\u0015" },
   { key = "6",     mods = "Control", chars = "\u001e" },
 ]
+
+[mouse]
+hide_when_typing = true
