@@ -10,7 +10,8 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-    'exec-and-forget borders active_color=0xffe5c07b inactive_color=0xff5c5670 width=8.0',
+    'exec-and-forget borders active_color=0xffe5c07b inactive_color=0xff5c5670 width=5.0',
+    'exec-and-forget open -a "TouchBarAerospace"',
     'exec-and-forget open -a "SwipeAeroSpace"',
     'layout tiles'
     #    'exec-and-forget sketchybar',
@@ -30,7 +31,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 0
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -72,10 +73,10 @@ automatically-unhide-macos-hidden-apps = false
 [gaps]
     inner.horizontal = 0
     inner.vertical =   0
-    outer.left =       5
-    outer.bottom =     5
+    outer.left =       0
+    outer.bottom =     0
     outer.top =        0
-    outer.right =      5
+    outer.right =      0
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
